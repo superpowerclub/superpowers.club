@@ -32,8 +32,11 @@
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 bg-black text-white py-4 px-6 md:px-12 flex justify-between items-center border-b border-gray-800">
-        <div class="text-2xl font-extrabold tracking-tighter">
-            SUPER<span class="text-brand-red">POWERS</span>
+        <div class="flex items-center gap-3">
+            <img src="assets/img/logo.jpeg" alt="SuperPowers Logo" title="SuperPowers" loading="lazy" class="w-12 h-12 md:w-14 md:h-14 object-contain rounded-md">
+            <div class="text-2xl font-extrabold tracking-tighter">
+                SUPER<span class="text-brand-red">POWERS</span>
+            </div>
         </div>
         <div class="hidden md:flex space-x-8 font-medium uppercase text-sm tracking-widest">
             <a href="#home" class="hover:text-brand-red transition">Home</a>
@@ -49,10 +52,13 @@
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center bg-black overflow-hidden">
         <!-- Background Mockup -->
-        <div class="absolute inset-0 opacity-50">
-            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2000" alt="SuperPowers Hero" class="w-full h-full object-cover">
+        <div class="absolute inset-0 opacity-100">
+            <img src="assets/img/background4.png" alt="" aria-hidden="true" loading="lazy" class="w-full h-full object-cover filter contrast-125 saturate-110">
         </div>
-        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <!-- Subtle dark overlay reduced so texture is visible -->
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <!-- Small dark patch to obscure watermark text (e.g., "Dreamina") -->
+        <div class="absolute bottom-6 right-6 w-44 h-10 rounded-md bg-black opacity-80 pointer-events-none hidden sm:block"></div>
         
         <div class="relative z-10 text-center text-white px-4">
             <h1 class="text-6xl md:text-8xl font-black italic uppercase leading-none mb-4">
@@ -171,8 +177,11 @@
     <footer class="bg-black text-white py-12 px-6 md:px-12 border-t border-gray-900">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div class="col-span-1 md:col-span-2">
-                <div class="text-3xl font-extrabold tracking-tighter mb-4">
-                    SUPER<span class="text-brand-red">POWERS</span>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="assets/img/logo.jpeg" alt="SuperPowers Logo" title="SuperPowers" loading="lazy" class="w-8 h-8 md:w-10 md:h-10 object-contain rounded-md">
+                    <div class="text-3xl font-extrabold tracking-tighter">
+                        SUPER<span class="text-brand-red">POWERS</span>
+                    </div>
                 </div>
                 <p class="text-gray-500 max-w-sm">
                     Premium apparel brand dedicated to excellence, power, and identity. Crafted in Indonesia with international standards.
